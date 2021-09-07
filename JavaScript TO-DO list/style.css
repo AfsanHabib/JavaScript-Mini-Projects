@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #5134bb;
+  --secondary-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--primary-color);
+  font: bold 2rem "Open Sans", sans-serif;
+}
+
+.todo {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1px;
+}
+
+.todo__title {
+  display: flex;
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  box-shadow: 1px 1px 5px gray;
+  font-size: 3rem;
+  color: green;
+}
+
+.todo__list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo__item {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 5px purple;
+}
+.todo__item > div {
+  width: 80%;
+}
+.todo__item:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: yellowgreen;
+  color: var(--primary-color);
+}
+
+.todo__item > input[type="text"] {
+  border: none;
+  width: 80%;
+  font: inherit;
+}
+
+.todo__item > input[type="button"],
+.todo__item > input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  font: inherit;
+}
+
+.todo__item > input[type="checkbox"]:checked + div {
+  text-decoration: line-through;
+}
+
+.todo__new-item {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  justify-content: space-evenly;
+  padding: 10px 0;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+  margin: 10px;
+  font: inherit;
+}
+
+.todo__new-item > input {
+  background-color: white;
+  border: none;
+  width: 80%;
+  outline: none;
+  font: inherit;
+}
+
+.todo__new-item > input::placeholder {
+  font-style: italic;
+  font-weight: normal;
+}
