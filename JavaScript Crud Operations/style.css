@@ -1,0 +1,49 @@
+body > table {
+  width: 100%;
+  background-color: rgb(88, 204, 123);
+}
+table {
+  border-collapse: collapse;
+}
+table.list {
+  width: 100%;
+}
+td,
+th {
+  border: 3px solid #ddd;
+  text-align: left;
+  padding: 6px 15px;
+}
+tr:nth-child(even),
+table.list thead > tr {
+  background-color: rgb(40, 110, 71);
+  color: rgb(220, 230, 230);
+}
+
+.input-item {
+  width: 91%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 40px;
+  border: none;
+  color: aliceblue;
+  margin: 25px 0 25px;
+  outline: none;
+}
+
+.submit-btn {
+  background: green;
+}
+.reset-btn {
+  background: rgb(23, 23, 124);
+}
